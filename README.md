@@ -1,3 +1,5 @@
+# Udemy Advanced React/Redux Testing
+
 A basic React application with extensive testing, created by following "Advanced React and Redux" on Udemy.
 
 Features unit and integration tests using Jest and Enzyme.
