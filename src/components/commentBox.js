@@ -1,8 +1,10 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import * as actions from "actions";
+import { requireAuth } from "components/requireAuth";
 
-export const CommentBox = () => {
+export const CommentBox = requireAuth(() => {
   const [comment, setComment] = React.useState("");
   const dispatch = useDispatch();
 
@@ -34,4 +36,4 @@ export const CommentBox = () => {
       </button>
     </div>
   );
-};
+});
